@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  9.4.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "stackoverflow-answers-graphql-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/oicramps/stackoverflow-answers-graphql-api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/oicramps/stackoverflow-answers-graphql-api/issues"
+    },
+    "homepage": "https://github.com/oicramps/stackoverflow-answers-graphql-api#readme",
+    "dependencies": {
+      "body-parser": "^1.18.2",
+      "cors": "^2.8.4",
+      "express": "^4.16.2",
+      "express-graphql": "^0.6.11",
+      "graphql": "^0.13.1",
+      "graphql-server-express": "^1.3.2",
+      "graphql-tools": "^2.21.0",
+      "nodemon": "^1.15.0",
+      "stackexchange-node": "^1.0.1"
+    },
+    "devDependencies": {
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/oicramps/Documents/DEV/Projects/stackoverflow-answers-graphql-api/node_modules/verror/node_modules/extsprintf'
