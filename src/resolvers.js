@@ -1,16 +1,16 @@
 // app/src/resolvers.js
 const stackexchange = require('stackexchange-node');
+const config = require('../config/config');
 
 const options = {version: 2.2};
 const context = new stackexchange(options);
-const API_KEY = 'QNYK9hxzZkT5Lsoxlp)gYw((';
+
+const API_KEY = config['API_KEY'];
 
 const resolvers = {
     Query: {
         questions: async (root, {tagged, limit, sort, score}) => {
            var result;
-
-           console.log("teste");
 
            await _getQuestionsByFilter(tagged, limit, sort, score).then(function (data) {
                result = data.items;
